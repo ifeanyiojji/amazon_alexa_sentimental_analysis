@@ -51,7 +51,7 @@ st.markdown("""
 @st.cache_resource
 def load_models():
     xgb_model = pickle.load(open('xgb.pkl', 'rb'))
-    cv = pickle.load(open('countvectorizer.pkl', 'rb'))
+    cv = pickle.load(open('countVectorizer.pkl', 'rb'))
     scaler = pickle.load(open('scaler.pkl', 'rb'))
     return xgb_model, cv, scaler
 
