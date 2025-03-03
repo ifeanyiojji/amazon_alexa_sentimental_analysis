@@ -61,6 +61,14 @@ xgb_model, cv, scaler = load_models()
 st.markdown('<p class="header-text">Amazon Alexa Reviews Sentiment Analysis</p>', unsafe_allow_html=True)
 st.markdown("---")
 
+st.markdown("### 📥 Download Sample Dataset")
+st.markdown(
+    "[Click here to download the dataset](https://drive.google.com/file/d/1ZWwT73egLbFXqpnOsOdoMyOmXYz64kyX/view?usp=drive_link)",
+    unsafe_allow_html=True,
+)
+st.markdown("---")
+
+
 # File upload section
 uploaded_file = st.file_uploader("Upload your Amazon reviews CSV file", type="csv")
 
